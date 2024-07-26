@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CNSA 후배들을 위한 학교생활 팁</title>
+    <div class="name">30707 김용록</div>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .floor-plan {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+        }
+        .floor {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 10px;
+            width: 80%;
+            max-width: 800px;
+        }
+        .floor h3 {
+            background: #f4f4f4;
+            padding: 10px;
+            margin: 0;
+            text-align: center;
+        }
+        .floor .rooms {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .room {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 5px;
+            padding: 10px;
+            width: 100px;
+            text-align: center;
+        }
+        .room.C { background-color: #e0f7fa; } /* C 동 */
+        .room.N { background-color: #ffe0b2; } /* N 동 */
+        .room.S { background-color: #c8e6c9; } /* S 동 */
+        .room.A { background-color: #f8bbd0; } /* A 동 */
+    </style>
+</head>
+<body>
+    <header>
+        <h1>건물 안내도</h1>
+        <nav>
+            <ul>
+                
+                <li><a href="학업.html">학업</a></li>
+                <li><a href="학교생활.html">학교 생활</a></li>
+                <li><a href="건물안내도.html">건물 안내도</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="building-map">
+            <h2>건물 안내도</h2>
+            <div class="floor-plan">
+                <!-- 지하 1층 -->
+                <div class="floor">
+                    <h3>지하 1층</h3>
+                    <div class="rooms">
+                        <div class="room C">미술관</div>
+                        <div class="room C">자판기</div>
+                        <div class="room C">지하 스터디룸</div>
+                        <div class="room N">공학실</div>
+                        
+                    </div>
+                </div>
+                <!-- 1층 -->
+                <div class="floor">
+                    <h3>1층</h3>
+                    <div class="rooms">
+                        <div class="room C">갤럭시 홀</div>
+                        <div class="room N">N동 행정실,ATM 기</div>
+                        <div class="room S">S동 화학실험실,오픈랩</div>
+                        <div class="room A">A 동 수업 교실, 자판기</div>
+                        
+                    </div>
+                </div>
+                <!-- 2층 -->
+                <div class="floor">
+                    <h3>2층</h3>
+                    <div class="rooms">
+                        <div class="room C">C동 수업 교실+3학년 면학실</div>
+                        <div class="room N">교무운영부,학생생활안전부</div>
+                        <div class="room S">S동 수업 교실+물리실험실+급식실</div>
+                        <div class="room A">A동 수업교실</div>
+                        <div class="building-item library">도서관</div>
+                    </div>
+                </div>
+                <!-- 3층 -->
+                <div class="floor">
+                    <h3>3층</h3>
+                    <div class="rooms">
+                        <div class="room C">C동 수업 교실+2학년 면학실</div>
+                        <div class="room N">인쇄실+학사운영지원팀</div>
+                        <div class="room S">S동 수업 교실</div>
+                        <div class="room A">A동 수업 교실</div>
+                        <div class="building-item library">도서관</div>
+                    </div>
+                </div>
+                <!-- 4층 -->
+                <div class="floor">
+                    <h3>4층</h3>
+                    <div class="rooms">
+                        <div class="room C">C동 수업 교실+3학년 면학실</div>
+                        <div class="room N">N동 수업 교실+행정실</div>
+                        <div class="room S">S동 수업 교실</div>
+                        <div class="room A">A동 수업 교실</div>
+                        <div class="building-item library">도서관</div>
+                    </div>
+                </div>
+                <!-- 5층 -->
+                <div class="floor">
+                    <h3>5층</h3>
+                    <div class="rooms">
+                        
+                        <div class="room N">미술실+음악실</div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

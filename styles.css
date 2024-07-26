@@ -1,0 +1,852 @@
+/* 기본 스타일 설정 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* 헤더 스타일 */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    text-align: center;
+    margin: 0;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+/* 네비게이션 메뉴 스타일 */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-bottom: 2px solid #007BFF; /* 메뉴 하단에 강조선 추가 */
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 15px 20px;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+nav ul li a.active {
+    background-color: #007BFF;
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+/* Main 컨텐츠 스타일 */
+main {
+    margin-top: 80px; /* 헤더 높이에 맞춰 여백 조정 */
+    padding: 20px;
+}
+
+/* 푸터 스타일 */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.floor-plan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.floor {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    width: 80%;
+    max-width: 800px;
+}
+
+.floor h3 {
+    background: #f4f4f4;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+}
+
+.floor .rooms {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.room {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+}
+
+.room.C { background-color: #e0f7fa; } /* C 동 */
+.room.N { background-color: #ffe0b2; } /* N 동 */
+.room.S { background-color: #c8e6c9; } /* S 동 */
+.room.A { background-color: #f8bbd0; } /* A 동 */
+
+/* 네비게이션 메뉴 가로 배치 스타일 */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* 메뉴 항목을 중앙에 배치 */
+}
+
+nav ul li {
+    margin: 0 15px; /* 메뉴 항목 사이의 간격 */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px; /* 메뉴 항목의 패딩 */
+    display: block; /* 링크 영역을 블록으로 만들어 클릭 가능 영역 확대 */
+}
+
+nav ul li a:hover {
+    background-color: #575757; /* 메뉴 항목에 호버 시 배경색 */
+    border-radius: 5px; /* 호버 시 모서리 둥글게 */
+}
+
+
+/* 기본 스타일 설정 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* 헤더 스타일 */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    text-align: center;
+    margin: 0;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+/* 네비게이션 메뉴 스타일 */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-bottom: 2px solid #007BFF; /* 메뉴 하단에 강조선 추가 */
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 15px 20px;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+nav ul li a.active {
+    background-color: #007BFF;
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+/* Main 컨텐츠 스타일 */
+main {
+    margin-top: 80px; /* 헤더 높이에 맞춰 여백 조정 */
+    padding: 20px;
+}
+
+/* 학업 섹션 스타일 */
+#academic {
+    margin: 20px 0;
+}
+
+#academic ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#academic ul li {
+    margin: 10px 0;
+}
+
+#academic ul li a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+#academic ul li a:hover {
+    color: #0056b3;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section h3 {
+    font-size: 20px;
+    color: #333;
+}
+
+section p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* 푸터 스타일 */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/* 기본 스타일 설정 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* 헤더 스타일 */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    text-align: center;
+    margin: 0;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+/* 네비게이션 메뉴 스타일 */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-bottom: 2px solid #007BFF; /* 메뉴 하단에 강조선 추가 */
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 15px 20px;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+nav ul li a.active {
+    background-color: #007BFF;
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+/* Main 컨텐츠 스타일 */
+main {
+    margin-top: 80px; /* 헤더 높이에 맞춰 여백 조정 */
+    padding: 20px;
+}
+
+/* 학교 생활 섹션 스타일 */
+#school-life {
+    margin: 20px 0;
+}
+
+#school-life ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#school-life ul li {
+    margin: 10px 0;
+}
+
+#school-life ul li a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+#school-life ul li a:hover {
+    color: #0056b3;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section h3 {
+    font-size: 20px;
+    color: #333;
+}
+
+section p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* 푸터 스타일 */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* 기본 스타일 설정 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* 헤더 스타일 */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    text-align: center;
+    margin: 0;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+/* 네비게이션 메뉴 스타일 */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-bottom: 2px solid #007BFF; /* 메뉴 하단에 강조선 추가 */
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 15px 20px;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+nav ul li a.active {
+    background-color: #007BFF;
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+/* Main 컨텐츠 스타일 */
+main {
+    margin-top: 80px; /* 헤더 높이에 맞춰 여백 조정 */
+    padding: 20px;
+}
+
+/* 표 스타일 */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* 푸터 스타일 */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/* 기본 스타일 설정 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* 헤더 스타일 */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    text-align: center;
+    margin: 0;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+/* 네비게이션 메뉴 스타일 */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-bottom: 2px solid #007BFF; /* 메뉴 하단에 강조선 추가 */
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 15px 20px;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+nav ul li a.active {
+    background-color: #007BFF;
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+/* Main 컨텐츠 스타일 */
+main {
+    margin-top: 80px; /* 헤더 높이에 맞춰 여백 조정 */
+    padding: 20px;
+}
+
+/* 표 스타일 */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* 푸터 스타일 */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/* 기본 스타일 설정 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* 헤더 스타일 */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    text-align: center;
+    margin: 0;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+/* 네비게이션 메뉴 스타일 */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-bottom: 2px solid #007BFF; /* 메뉴 하단에 강조선 추가 */
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 15px 20px;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+nav ul li a.active {
+    background-color: #007BFF;
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+/* Main 컨텐츠 스타일 */
+main {
+    margin-top: 80px; /* 헤더 높이에 맞춰 여백 조정 */
+    padding: 20px;
+}
+
+/* 항목 버튼 스타일 */
+.menu {
+    margin-bottom: 20px;
+}
+
+.menu-item {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.menu-item:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* 콘텐츠 숨김 및 표시 */
+.content {
+    display: none;
+    margin-top: 20px;
+}
+
+/* 콘텐츠 표시 스타일 */
+.content.active {
+    display: block;
+}
+
+/* 푸터 스타일 */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/* 기본 스타일 설정 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* 헤더 스타일 */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    text-align: center;
+    margin: 0;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+/* 네비게이션 메뉴 스타일 */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-bottom: 2px solid #007BFF; /* 메뉴 하단에 강조선 추가 */
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 15px 20px;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+nav ul li a.active {
+    background-color: #007BFF;
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+/* Main 컨텐츠 스타일 */
+main {
+    margin-top: 80px; /* 헤더 높이에 맞춰 여백 조정 */
+    padding: 20px;
+}
+
+/* 표 스타일 */
+.subject-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.subject-table th, .subject-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.subject-table th {
+    background-color: #007BFF;
+    color: white;
+}
+
+.subject-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.subject-table tr:hover {
+    background-color: #ddd;
+}
+
+/* 푸터 스타일 */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.library {
+    background-color: #c0c0c0; /* 회색 배경 */
+    color: #000; /* 텍스트 색상 */}
+
+    
